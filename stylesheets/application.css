@@ -4487,7 +4487,8 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     top: 0;
     left: 1px;
     padding: 0.2em;
-    text-align: center; }
+    text-align: center;
+    background: white; }
     #header .home:before {
       content: url(../images/c3net-logo-square.svg); }
     #header .home:hover, #header .home:active {
