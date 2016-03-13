@@ -3168,7 +3168,7 @@ div.members h3:before {
 .fa-money:before, #top-menu a.expenses:before, #top-menu .expenses.icon-add.checklist-new-only:before {
   content: "\f0d6"; }
 
-.fa-caret-down:before, fieldset.collapsible.collapsed > legend:before {
+.fa-caret-down:before, fieldset.collapsible > legend:before {
   content: "\f0d7"; }
 
 .fa-caret-up:before {
@@ -3177,7 +3177,7 @@ div.members h3:before {
 .fa-caret-left:before {
   content: "\f0d9"; }
 
-.fa-caret-right:before, fieldset.collapsible > legend:before, tr.project.idnt td.name span:before, tr.issue.idnt td.subject a:before, tr.issue.idnt td.subject .icon-add.checklist-new-only:before {
+.fa-caret-right:before, fieldset.collapsible.collapsed > legend:before, tr.project.idnt td.name span:before, tr.issue.idnt td.subject a:before, tr.issue.idnt td.subject .icon-add.checklist-new-only:before {
   content: "\f0da"; }
 
 .fa-columns:before, .jstElements .jstb_pre:before {
@@ -4489,7 +4489,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     padding: 0.2em;
     text-align: center; }
     #header .home:before {
-      content: url(../images/logo.svg); }
+      content: url(../images/c3net-logo-square.svg); }
     #header .home:hover, #header .home:active {
       background: rgba(71, 77, 87, 0.5); }
   #header #quick-search {
@@ -4599,7 +4599,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     #main #sidebar:last-child {
       margin-right: 0; }
     #main #sidebar h3 {
-      margin-top: 1em;
+      margin-top: 0.5em;
       color: #333333;
       padding-bottom: 0.3em;
       text-indent: 0.2em;
@@ -4666,8 +4666,8 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
     #main #content h2:first-of-type {
       font-weight: 400;
       border-bottom: 1px solid #CCCCCC;
-      margin: 0 0 1.2em;
-      padding: 0.7em 0; }
+      margin: 0 0 0.5em;
+      padding: 0.5em 0; }
       #main #content h2:first-of-type .live_search {
         margin-left: 1em; }
     #main #content form .contextual {
@@ -4687,8 +4687,7 @@ button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type=
   font-size: 0.9em;
   color: #777777;
   text-align: center;
-  padding: 1em;
-  display: none !important; }
+  padding: 1em; }
   #footer::after {
     clear: both;
     content: "";
@@ -5059,7 +5058,7 @@ span.search_for_watchers a:before, span.search_for_watchers .icon-add.checklist-
 .box {
   display: inline-block;
   width: 100%;
-  padding: 2em 2em 1em;
+  padding: 1em;
   background: #F9F9F9;
   border: 1px solid #CCCCCC;
   border-radius: 4px;
@@ -5149,6 +5148,15 @@ div.issue {
     padding-left: 4.5em; }
   div.issue .attributes {
     margin-top: 2em; }
+  div.issue .attribute {
+    padding-left: 180px;
+    clear: left;
+    min-height: 1.8em; }
+    div.issue .attribute .label {
+      width: 170px;
+      margin-left: -180px;
+      font-weight: bold;
+      float: left; }
   div.issue .contextual {
     top: 0 !important; }
   div.issue table.issues tr:last-child td {

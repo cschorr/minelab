@@ -350,7 +350,7 @@ select
 		text-align: center
 
 		&:before
-			content: url(../images/logo.svg)
+			content: url(../images/c3net-logo-square.svg)
 
 		&:hover, &:active
 			background: rgba($dark-blue, .5)
@@ -531,7 +531,7 @@ select
 		padding-top: 1em
 
 		h3
-			margin-top: 1em
+			margin-top: .5em
 			color: $text
 			padding-bottom: .3em
 			text-indent: .2em
@@ -614,8 +614,8 @@ select
 		h2:first-of-type
 			font-weight: 400
 			border-bottom: 1px solid $medium-grey
-			margin: 0 0 1.2em
-			padding: .7em 0
+			margin: 0 0 .5em
+			padding: .5em 0
 
 			.live_search
 				margin-left: 1em
@@ -642,8 +642,6 @@ select
 	color: $grey
 	text-align: center
 	padding: 1em
-	display: none !important
-
 
 /* Admin index */
 
@@ -1087,7 +1085,7 @@ span.search_for_watchers a, span.add_attachment a
 .box
 	display: inline-block
 	width: 100%
-	padding: 2em 2em 1em
+	padding: 1em
 	background: $white
 	border: 1px solid $medium-grey
 	border-radius: 4px
@@ -1175,6 +1173,17 @@ div.issue
 	.attributes
 		margin-top: 2em
 
+	.attribute
+		padding-left: 180px
+		clear: left
+		min-height: 1.8em
+
+		.label
+			width: 170px
+			margin-left: -180px
+			font-weight: bold
+			float: left
+
 	.contextual
 		top: 0 !important
 
@@ -1220,7 +1229,7 @@ div.issue table.attributes td
 	width: 28%
 
 fieldset.collapsible > legend
-	@extend .fa-caret-right
+	@extend .fa-caret-down
 	cursor: pointer
 
 	&:before
@@ -1228,7 +1237,7 @@ fieldset.collapsible > legend
 		margin-right: .5em
 
 fieldset.collapsible.collapsed > legend
-	@extend .fa-caret-down
+	@extend .fa-caret-right
 
 fieldset#date-range p
 	margin: 2px 0
